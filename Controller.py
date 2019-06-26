@@ -29,7 +29,7 @@ class Controllore(QMainWindow):
         self.view.timer.timeout.connect(self.every_second)        
         
         #print the actual value
-        self.view.beginnerLeaderboard.setText(self.model.getManager().printDatas(self.model.getManager().beginner,"Beginner"))
+        self.view.beginnerLeaderboard.setText(self.model.getManager().printDatas(self.model.getManager().beginner,"Easy"))
         self.view.intermediateLeaderboard.setText(self.model.getManager().printDatas(self.model.getManager().intermediate,"Intermediate"))
         self.view.expertLeaderboard.setText(self.model.getManager().printDatas(self.model.getManager().expert,"Expert"))
         

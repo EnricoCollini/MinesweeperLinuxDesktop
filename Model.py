@@ -54,9 +54,10 @@ class model(QObject):
         self.gameMode = mode
     
     def manageWin(self,nome):
-        if(self.gameMode=="Easy"):
-            level = self.manager.beginner
-            self.manager.setData(level,nome,self.time)
+        if(self.gameMode=="custom"):
+            print("customMode")
+            #level = self.manager.beginner
+            #self.manager.setData(level,nome,self.time)
         elif(self.gameMode == "Intermediate"):
             level = self.manager.intermediate
             self.manager.setData(level,nome,self.time)
@@ -64,9 +65,9 @@ class model(QObject):
             level = self.manager.expert
             self.manager.setData(level,nome,self.time)
         else:
-            print("customMode")
-            #level = self.manager.beginner
-            #self.manager.setData(level,nome,self.time)
+            print("easyMode")
+            level = self.manager.beginner
+            self.manager.setData(level,nome,self.time)
             
 
     #custom clicked

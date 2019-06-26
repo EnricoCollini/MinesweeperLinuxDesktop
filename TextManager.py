@@ -49,7 +49,7 @@ class textManager:
         for i in dati:
             if(tempo>i.getTempo()):
                 position = position + 1
-        dt =dataType()
+        dt = dataType()
         dt.setNome(nome)
         dt.setTempo(tempo)
         dati.insert(position, dt)
